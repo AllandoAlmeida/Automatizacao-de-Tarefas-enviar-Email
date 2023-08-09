@@ -17,7 +17,7 @@ Passo 3 : enviar um e-mail para o meu gestor com as resultados das análises;
 """ Passo 1 : buscar informações das ações de forma automática;
 periodo 6meses "6mo" """
 #PETR4.SA
-alandoalmeida@icloud.com    companie = input("Digite o Ticker da Companhia: ")
+companie = input("Digite o Ticker da Companhia: ")
 ticker = yf.Ticker(companie)
 history_data = ticker.history("6mo")
 closure = history_data.Close;
